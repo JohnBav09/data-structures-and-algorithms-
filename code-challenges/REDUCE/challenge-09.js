@@ -144,9 +144,8 @@ const characters = [
 const countNumberOfChildren = (arr) => {
   let returnNames = arr.reduce((answeresSoFar, children , inx) =>{
     characters.children = answeresSoFar
-    return Number(child);
-   }), 
-};
+    return Number(child)
+  });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -157,12 +156,16 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-    let calculateAverage = arr.reduce((answeresSoFar, average , inx) =>{
-      characters.children = answeresSoFar
-      return Number(children);
-     }),
-    } 
-  
+  //arr = []
+ // average = sum/totalamount 
+ // sum 
+   let sum = arr.reduce((answeresSoFar, average , inx) =>{
+     return answeresSoFar + average;
+    })
+    // only one return per codeblock.
+   let average = sum/arr.length
+return average
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
